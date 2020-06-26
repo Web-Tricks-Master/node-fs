@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 // асинхронный
-fs.open('template.text', 'r', (err, fd) => {
+fs.open('template.txt', 'r', (err, fd) => {
     if (err) throw err;
     //fd - это дескриптор файла
     console.log(fd)
@@ -17,7 +17,7 @@ fs.open('template.text', 'r', (err, fd) => {
 let fd
 // синхронный
 try {
-  fd = fs.openSync('template.text', 'r')
+  fd = fs.openSync('template.txt', 'r')
   console.log(fd)
 } catch (err) {
   console.error(err)

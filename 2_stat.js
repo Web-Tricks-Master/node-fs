@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 // асинхронный
-fs.stat('template.text', (err, stats) => {
+fs.stat('template.txt', (err, stats) => {
     if (err) {
         console.error(err)
         return
@@ -11,14 +11,14 @@ fs.stat('template.text', (err, stats) => {
 
 // синхронный
 try {
-  const stats = fs.statSync('template.text')
+  const stats = fs.statSync('template.txt')
   // console.log(stats)
 } catch (err) {
   console.error(err)
 }
 
 // методы и свойства
-fs.stat('template.text', (err, stats) => {
+fs.stat('template.txt', (err, stats) => {
     if (err) {
         console.error(err)
         return
