@@ -21,7 +21,7 @@ try {
   console.log(fd)
 } catch (err) {
   console.error(err)
-}finally {
+} finally {
   if (fd !== undefined)
     fs.closeSync(fd);
 }
